@@ -3,9 +3,9 @@ import json
 import requests
 
 app = Flask(__name__)
-
-
-print(json.dumps(jsons))
+@app.route("/")
+def index()
+    return "hello world"
 @app.route("/api")
 def nodemcu_get():
     doviz = requests.get('https://api.genelpara.com/embed/doviz.json')
