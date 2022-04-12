@@ -1,4 +1,5 @@
 name: learn-github-actions
+on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
