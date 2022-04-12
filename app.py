@@ -4,7 +4,7 @@ import requests
 
 app = Flask(__name__)
 @app.route("/")
-def index()
+def index():
     return "hello world"
 @app.route("/api")
 def nodemcu_get():
