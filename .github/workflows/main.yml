@@ -1,0 +1,7 @@
+name: learn-github-actions
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: curl https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3
