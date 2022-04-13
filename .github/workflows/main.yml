@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: ls
+      - run: chmod +x para-yeni.sh
+      - run: sudo apt install jq -y
+      - run: ./para-yeni.sh
