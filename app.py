@@ -13,7 +13,7 @@ def nodemcu_get():
     return doviz.content
 
 @app.route("/api1")
-def nodemcu_get():
+def nodemcu_get1():
     doviz = requests.get('https://canlidovizkurlari.com/refresh/check.php')
 
     return doviz.content
