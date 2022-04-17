@@ -21,7 +21,10 @@ def nodemcu_get():
 'Sec-Fetch-Mode': 'cors',
 'Sec-Fetch-Site': 'same-site'
 }
-    doviz = requests.get('https://canlialtinfiyatlari.com/LIVE/total.php')
+    headers1 = {
+   'Host': 'canlialtinfiyatlari.com' 
+}
+    doviz = requests.get('https://185.106.20.34/LIVE/total.php', headers=headers1)
     hava = requests.get('https://servis.mgm.gov.tr/web/sondurumlar?merkezid=91009', headers=headers)
     havajs = json.loads(hava.content)
     py_doviz = json.loads(doviz.content)
